@@ -1,6 +1,6 @@
 {
-  "name": "skills-radar-prototype",
-  "homepage": "https://madetech.github.io/skills-radar-prototype/",
+  "name": "skills-radar",
+  "homepage": "https://madetech.github.io/skills-radar/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
