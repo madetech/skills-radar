@@ -1,6 +1,6 @@
 # Skills Radar
 
-https://madetech.github.io/skills-radar-prototype/
+<https://madetech.github.io/skills-radar>
 
 ## Technical Architect Roles
 
