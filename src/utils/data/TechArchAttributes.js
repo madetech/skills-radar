@@ -1,7 +1,9 @@
 export const TechArchAttributes = {
   "Leadership & Strategy": {
-    Follow: "Follow the crowd",
-    Apply: "Applies what you've learned",
+    Follow:
+      "Follows the team processes, delivering a consistent flow of features to production",
+    Apply:
+      "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
     Contribute: "Contributes as an active participant",
     Define: "Works with stakeholders to define and set strategic direction",
     Inspire: "Inspires others to do all the things",
@@ -14,25 +16,40 @@ export const TechArchAttributes = {
     Exec: null,
   },
   "Software Development": {
-    Adopts: null,
-    Specialises: null,
-    Evangelises: null,
-    Masters: null,
-    Creates: null,
+    Adopts:
+      "Actively learns and adopts the technology and tools defined by the team",
+    Specialises:
+      "Is the go-to person for one or more technologies and takes initiative to learn new ones",
+    Evangelises:
+      "Researches, creates proofs of concept and introduces new technologies to the team",
+    Masters:
+      "Has very deep knowledge about the whole technology stack of the system",
+    Creates:
+      "Designs and creates new technologies that are widely used either by internal or external team",
   },
   Cloud: {
-    Adopts: null,
-    Specialises: null,
-    Evangelises: null,
-    Masters: null,
-    Creates: null,
+    Adopts:
+      "Actively learns and adopts the technology and tools defined by the team",
+    Specialises:
+      "Is the go-to person for one or more technologies and takes initiative to learn new ones",
+    Evangelises:
+      "Researches, creates proofs of concept and introduces new technologies to the team",
+    Masters:
+      "Has very deep knowledge about the whole technology stack of the system",
+    Creates:
+      "Designs and creates new technologies that are widely used either by internal or external team",
   },
   Security: {
-    Adopts: null,
-    Specialises: null,
-    Evangelises: null,
-    Masters: null,
-    Creates: null,
+    Adopts:
+      "Actively learns and adopts the technology and tools defined by the team",
+    Specialises:
+      "Is the go-to person for one or more technologies and takes initiative to learn new ones",
+    Evangelises:
+      "Researches, creates proofs of concept and introduces new technologies to the team",
+    Masters:
+      "Has very deep knowledge about the whole technology stack of the system",
+    Creates:
+      "Designs and creates new technologies that are widely used either by internal or external team",
   },
   Integrations: {
     "Apply Within a Service": null,
@@ -42,11 +59,16 @@ export const TechArchAttributes = {
     "Transform an Enterprise": null,
   },
   Methodology: {
-    Follow: null,
-    Apply: null,
-    Evangelises: null,
-    Masters: null,
-    Creates: null,
+    Follow:
+      "Follows the team processes, delivering a consistent flow of features to production",
+    Apply:
+      "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
+    Evangelises:
+      "Researches, creates proofs of concept and introduces new technologies to the team",
+    Masters:
+      "Has very deep knowledge about the whole technology stack of the system",
+    Creates:
+      "Designs and creates new technologies that are widely used either by internal or external team",
   },
   Facilitation: {
     "Assist Workshops": null,
@@ -56,11 +78,16 @@ export const TechArchAttributes = {
     "Impacts Business Ways of Working": null,
   },
   "Agile Practices": {
-    Follow: null,
-    Apply: null,
-    Evangelises: null,
-    Masters: null,
-    Creates: null,
+    Follow:
+      "Follows the team processes, delivering a consistent flow of features to production",
+    Apply:
+      "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
+    Evangelises:
+      "Researches, creates proofs of concept and introduces new technologies to the team",
+    Masters:
+      "Has very deep knowledge about the whole technology stack of the system",
+    Creates:
+      "Designs and creates new technologies that are widely used either by internal or external team",
   },
   "Growth Mindset": {
     "Self Improver": null,
@@ -93,7 +120,8 @@ export const TechArchAttributes = {
   Presenting: {
     Assists: null,
     Leads: null,
-    Creates: null,
+    Creates:
+      "Designs and creates new technologies that are widely used either by internal or external team",
     Influences: null,
     Impacts: null,
   },
