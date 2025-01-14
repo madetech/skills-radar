@@ -17,6 +17,7 @@ import {
 import "./App.css";
 import RadarChart from "./components/RadarChart";
 import { RadarProvider } from "./components/RadarProvider.js";
+import logo from "./logo.png";
 Chart.register(
   ArcElement,
   BarElement,
@@ -36,7 +37,10 @@ Chart.register(
 function App() {
   return (
     <RadarProvider>
-      <h2 style={{ textAlign: "center" }}>Skills Radar</h2>
+      <h1 style={{ textAlign: "center" }}>
+        <img src={logo} alt="Made Tech's logo." className="logo" />
+        Skills Radar
+      </h1>
 
       <div className="App">
         <RadarChart />

@@ -74,3 +74,8 @@ canvas {
     transform: rotate(360deg);
   }
 }
+
+img.logo {
+  padding-right: 10px;
+  margin-bottom: -11px;
+}
