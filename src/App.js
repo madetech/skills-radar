@@ -1,22 +1,23 @@
-import RadarChart from "./components/RadarChart";
-import { RadarProvider } from "./components/RadarProvider.js";
-import "./App.css";
 import {
-  Chart,
   ArcElement,
-  BarElement,
   BarController,
+  BarElement,
   CategoryScale,
-  LinearScale,
-  PointElement,
-  LineController,
-  RadialLinearScale,
-  LineElement,
-  RadarController,
-  Tooltip,
+  Chart,
   Filler,
   Legend,
+  LinearScale,
+  LineController,
+  LineElement,
+  PointElement,
+  RadarController,
+  RadialLinearScale,
+  Tooltip,
 } from "chart.js";
+import "./App.css";
+import RadarChart from "./components/RadarChart";
+import { RadarProvider } from "./components/RadarProvider.js";
+import logo from "./logo.png";
 Chart.register(
   ArcElement,
   BarElement,
@@ -36,7 +37,10 @@ Chart.register(
 function App() {
   return (
     <RadarProvider>
-      <h2 style={{ textAlign: "center" }}>Radar Chart</h2>
+      <h1 style={{ textAlign: "center" }}>
+        <img src={logo} alt="Made Tech's logo." className="logo" />
+        Skills Radar
+      </h1>
 
       <div className="App">
         <RadarChart />
