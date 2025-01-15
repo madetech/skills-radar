@@ -39,6 +39,7 @@ const Upload = () => {
             variant="contained"
             tabIndex={-1}
             startIcon={<CloudUploadIcon />}
+            onClick={(e) => (e.target.value = "")}
           >
             Upload JSON
             <VisuallyHiddenInput
