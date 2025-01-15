@@ -1,7 +1,7 @@
 import RadarContainer from "./Radar";
-import Slider from "./Slider";
-import SaveImage from "./SaveImage";
 import { RadarConsumer } from "./RadarProvider";
+import SaveImage from "./SaveImage";
+import Slider from "./Slider";
 
 function RadarChart() {
   return (
@@ -15,6 +15,7 @@ function RadarChart() {
             </div>
           </div>
           <div className="sliders">
+            <h2>{state.data.title}</h2>
             {Object.entries(state.data.sliderDetails).map(
               ([skill, descriptors], index) => {
                 return (

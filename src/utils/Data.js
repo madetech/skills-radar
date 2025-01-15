@@ -47,6 +47,7 @@ const datasets = [...parsedRoles(defaultRoles.RoleLevels), yourDataset];
 export const YOU = datasets.length - 1;
 
 export const ChartData = {
+  title: defaultRoles.title,
   // Labels is used for the graph so generate it from the JSON
   labels: Object.keys(defaultRoles.RoleData),
   sliderDetails: defaultRoles.RoleData,
