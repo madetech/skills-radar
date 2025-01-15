@@ -65,6 +65,7 @@ Create a JSON file with this file structure and upload it:
 - You have as many Role Levels as you want, "You" will always be last.
 - The Role Levels `data` field is expressed as an index from 1 to however many skill levels you have.
   - E.g. Level 1 = 1, Level 2 = 2
+- The `null`s represent the tooltip text for info/context.
 
 # Development
 
