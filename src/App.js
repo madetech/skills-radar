@@ -17,6 +17,7 @@ import {
 import "./App.css";
 import RadarChart from "./components/RadarChart";
 import { RadarProvider } from "./components/RadarProvider.js";
+import SkillsSelector from "./components/SkillsSelector";
 import logo from "./logo.png";
 Chart.register(
   ArcElement,
@@ -43,6 +44,9 @@ function App() {
       </h1>
 
       <div className="App">
+        <div>
+          <SkillsSelector />
+        </div>
         <RadarChart />
       </div>
     </RadarProvider>

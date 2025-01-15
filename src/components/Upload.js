@@ -16,22 +16,28 @@ const VisuallyHiddenInput = styled("input")({
 });
 
 const Upload = () => {
-  const readFile = (file, dispatch) => {
+  const readFile = (file, state, dispatch) => {
     const fileReader = new FileReader();
     fileReader.readAsText(file, "UTF-8");
     fileReader.onload = (e) => {
       const content = e.target.result;
-      dispatch({ type: "changed", data: JSON.parse(content) });
+      const contentJSON = JSON.parse(content);
+
+      if (state.previousData[contentJSON.title]) {
+        dispatch({ type: "selected", title: contentJSON.title });
+      } else {
+        dispatch({ type: "upload", data: contentJSON });
+      }
     };
   };
 
-  const onFileChange = (event, dispatch) => {
-    readFile(event.target.files[0], dispatch);
+  const onFileChange = (event, state, dispatch) => {
+    readFile(event.target.files[0], state, dispatch);
   };
 
   return (
     <RadarConsumer>
-      {({ dispatch }) => (
+      {({ state, dispatch }) => (
         <div style={{ marginTop: "20px" }}>
           <Button
             component="label"
@@ -41,10 +47,10 @@ const Upload = () => {
             startIcon={<CloudUploadIcon />}
             onClick={(e) => (e.target.value = "")}
           >
-            Upload JSON
+            Upload Skills JSON
             <VisuallyHiddenInput
               type="file"
-              onChange={(event) => onFileChange(event, dispatch)}
+              onChange={(event) => onFileChange(event, state, dispatch)}
               accept="application/json"
             />
           </Button>

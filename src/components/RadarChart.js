@@ -17,7 +17,6 @@ function RadarChart() {
             </div>
           </div>
           <div className="sliders">
-            <h2>{state.data.title}</h2>
             {Object.entries(state.data.sliderDetails).map(
               ([skill, descriptors], index) => {
                 return (
