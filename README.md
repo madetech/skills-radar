@@ -9,6 +9,63 @@ sets that we think are important.
 
 ![Example of the Skills Radar](docs/imgs/skills_radar.png)
 
+## Custom Roles
+
+You can upload files with custom attributes, skill levels and role levels.
+
+Create a JSON file with this file structure and upload it:
+
+```JSON
+{
+  "title": "Test Attributes",
+  "RoleData": {
+    "Attribute 1": {
+      "Skill level 1": null,
+      "Skill level 2": null,
+      "Skill level 3": null,
+      "Skill level 4": null
+    },
+    "Attribute 2": {
+      "Skill level 1": null,
+      "Skill level 2": null,
+      "Skill level 3": null,
+      "Skill level 4": null
+    },
+    "Attribute 3": {
+      "Skill level 1": null,
+      "Skill level 2": null,
+      "Skill level 3": null,
+      "Skill level 4": null
+    },
+    "Attribute 4": {
+      "Skill level 1": null,
+      "Skill level 2": null,
+      "Skill level 3": null,
+      "Skill level 4": null
+    },
+    "Attribute 5": {
+      "Skill level 1": null,
+      "Skill level 2": null,
+      "Skill level 3": null,
+      "Skill level 4": null
+    }
+  },
+  "RoleLevels": {
+    "Test": {
+      "data": [4, 3, 4, 1, 3],
+      "backgroundColor": "rgba(54, 162, 235, 0.2)",
+      "color": "rgb(54, 162, 235)"
+    }
+  }
+}
+```
+
+- You can have as many attributes as you want.
+- You have to keep the skill level consistent, i.e. always 4 or 5 etc.
+- You have as many Role Levels as you want, "You" will always be last.
+- The Role Levels `data` field is expressed as an index from 1 to however many skill levels you have.
+  - E.g. Level 1 = 1, Level 2 = 2
+
 # Development
 
 ## Available Scripts
