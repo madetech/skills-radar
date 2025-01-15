@@ -5,11 +5,24 @@ const RadarContext = React.createContext();
 
 function radarReducer(state, action) {
   switch (action.type) {
-    case "changed": {
-      return { data: ChartData(action.data) };
+    case "upload": {
+      const data = ChartData(action.data);
+      state.previousData[action.data.title] = {
+        data,
+      };
+
+      return {
+        ...state,
+        data,
+      };
+    }
+    case "selected": {
+      const { data } = state.previousData[action.title];
+
+      return { ...state, data };
     }
     case "update": {
-      return { data: state.data };
+      return { ...state, data: state.data };
     }
     default: {
       throw new Error(`Unhandled action type: ${action.type}`);
@@ -18,8 +31,15 @@ function radarReducer(state, action) {
 }
 
 function RadarProvider({ children }) {
+  const defaultData = ChartData();
+
   const [state, dispatch] = React.useReducer(radarReducer, {
-    data: ChartData(),
+    previousData: {
+      [defaultData.title]: {
+        data: defaultData,
+      },
+    },
+    data: defaultData,
   });
   const value = { state, dispatch };
   return (
