@@ -5,6 +5,9 @@ const RadarContext = React.createContext();
 
 function radarReducer(state, action) {
   switch (action.type) {
+    case "changed": {
+      return { data: ChartData(action.data) };
+    }
     case "update": {
       return { data: state.data };
     }
@@ -15,7 +18,9 @@ function radarReducer(state, action) {
 }
 
 function RadarProvider({ children }) {
-  const [state, dispatch] = React.useReducer(radarReducer, { data: ChartData });
+  const [state, dispatch] = React.useReducer(radarReducer, {
+    data: ChartData(),
+  });
   const value = { state, dispatch };
   return (
     <RadarContext.Provider value={value}>{children}</RadarContext.Provider>
@@ -43,4 +48,4 @@ function RadarConsumer({ children }) {
   );
 }
 
-export { RadarContext, RadarProvider, RadarConsumer, useData };
+export { RadarConsumer, RadarContext, RadarProvider, useData };

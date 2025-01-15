@@ -2,6 +2,7 @@ import RadarContainer from "./Radar";
 import { RadarConsumer } from "./RadarProvider";
 import SaveImage from "./SaveImage";
 import Slider from "./Slider";
+import Upload from "./Upload";
 
 function RadarChart() {
   return (
@@ -12,6 +13,7 @@ function RadarChart() {
             <div className="radar-chart">
               <RadarContainer />
               <SaveImage />
+              <Upload />
             </div>
           </div>
           <div className="sliders">

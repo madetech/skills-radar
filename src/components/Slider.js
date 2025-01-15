@@ -8,13 +8,7 @@ function Slider({ skill, index, descriptors }) {
 
   const sliderTemplate = {
     question: skill,
-    responses: [
-      { value: 1, text: descriptorsInOrder[0] },
-      { value: 2, text: descriptorsInOrder[1] },
-      { value: 3, text: descriptorsInOrder[2] },
-      { value: 4, text: descriptorsInOrder[3] },
-      { value: 5, text: descriptorsInOrder[4] },
-    ],
+    responses: descriptorsInOrder.map((d, i) => ({ value: i + 1, text: d })),
     layout: "stacked",
     style: { alignItems: "center" },
   };
