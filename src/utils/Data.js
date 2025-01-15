@@ -28,27 +28,38 @@ const yourDataset = {
   pointHoverBorderColor: "rgb(0, 172, 50)",
 };
 
-const parsedRoles = (roles) => {
-  return Object.keys(roles).map((key) => {
+const parsedRoles = (rolesFromJson) => {
+  const roles = Object.keys(rolesFromJson).map((key) => {
     return {
       ...defaultTemplate,
       label: key,
-      data: roles[key].data,
-      backgroundColor: roles[key].backgroundColor,
-      borderColor: roles[key].color,
-      pointBackgroundColor: roles[key].color,
-      pointHoverBorderColor: roles[key].color,
+      data: rolesFromJson[key].data,
+      backgroundColor: rolesFromJson[key].backgroundColor,
+      borderColor: rolesFromJson[key].color,
+      pointBackgroundColor: rolesFromJson[key].color,
+      pointHoverBorderColor: rolesFromJson[key].color,
     };
   });
+
+  const yourData = {
+    ...yourDataset,
+    data: Array(roles[0].data.length).fill(0),
+  };
+
+  return [...roles, yourData];
 };
 
-const datasets = [...parsedRoles(defaultRoles.RoleLevels), yourDataset];
+export const calculateNumOfAttributes = (roleData) =>
+  Object.keys(Object.entries(roleData)[0][1]).length;
 
-export const YOU = datasets.length - 1;
+export const ChartData = (roles = defaultRoles) => {
+  const datasets = parsedRoles(roles.RoleLevels);
 
-export const ChartData = {
-  // Labels is used for the graph so generate it from the JSON
-  labels: Object.keys(defaultRoles.RoleData),
-  sliderDetails: defaultRoles.RoleData,
-  datasets,
+  return {
+    you: datasets.length - 1,
+    title: roles.title,
+    labels: Object.keys(roles.RoleData),
+    sliderDetails: roles.RoleData,
+    datasets,
+  };
 };
