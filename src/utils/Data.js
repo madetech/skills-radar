@@ -42,14 +42,15 @@ const parsedRoles = (roles) => {
   });
 };
 
-const datasets = [...parsedRoles(defaultRoles.RoleLevels), yourDataset];
+export const ChartData = (roles = defaultRoles) => {
+  const datasets = [...parsedRoles(roles.RoleLevels), yourDataset];
 
-export const YOU = datasets.length - 1;
-
-export const ChartData = {
-  title: defaultRoles.title,
-  // Labels is used for the graph so generate it from the JSON
-  labels: Object.keys(defaultRoles.RoleData),
-  sliderDetails: defaultRoles.RoleData,
-  datasets,
+  return {
+    you: datasets.length - 1,
+    title: roles.title,
+    // Labels is used for the graph so generate it from the JSON
+    labels: Object.keys(roles.RoleData),
+    sliderDetails: roles.RoleData,
+    datasets,
+  };
 };

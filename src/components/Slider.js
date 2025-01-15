@@ -2,7 +2,6 @@ import Likert from "react-likert-scale";
 
 import HoverLikertSlider from "./HoverLikertSlider";
 import { RadarConsumer } from "./RadarProvider";
-import { YOU } from "../utils/Data";
 
 function Slider({ skill, index, descriptors }) {
   const descriptorsInOrder = Object.keys(descriptors);
@@ -27,7 +26,7 @@ function Slider({ skill, index, descriptors }) {
           <Likert
             key={skill}
             onChange={(val) => {
-              state.data.datasets[YOU].data[index] = val.value;
+              state.data.datasets[state.data.you].data[index] = val.value;
               dispatch({ type: "update", data: state.data });
             }}
             {...sliderTemplate}
