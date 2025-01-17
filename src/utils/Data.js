@@ -1,5 +1,3 @@
-import defaultRoles from "./data/TechArchAttributes.json";
-
 const defaultTemplate = {
   label: "Job Title",
   data: [],
@@ -52,7 +50,7 @@ const parsedRoles = (rolesFromJson) => {
 export const calculateNumOfAttributes = (roleData) =>
   Object.keys(Object.entries(roleData)[0][1]).length;
 
-export const ChartData = (roles = defaultRoles) => {
+export const ChartData = (roles) => {
   const datasets = parsedRoles(roles.RoleLevels);
 
   return {

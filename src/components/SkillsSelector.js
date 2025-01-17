@@ -16,7 +16,6 @@ const SkillsSelector = () => {
             marginBottom: "25px",
           }}
         >
-          {console.log({ ...state })}
           <Box sx={{ minWidth: 350 }}>
             <FormControl fullWidth>
               <InputLabel id="json-selector-label">Skills</InputLabel>
