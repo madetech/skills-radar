@@ -1,0 +1,80 @@
+{
+  "title": "1Login",
+  "RoleData": {
+    "OAuth/OIDC/DID": {
+      "Follow": "Follows the team processes, delivering a consistent flow of features to production",
+      "Apply": "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
+      "Contribute": "Contributes as an active participant",
+      "Define": "Works with stakeholders to define and set strategic direction",
+      "Inspire": "Inspires others to do all the things"
+    },
+    "Multi-tenant systems": {
+      "Follow": "Follows the team processes, delivering a consistent flow of features to production",
+      "Apply": "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
+      "Contribute": "Contributes as an active participant",
+      "Define": "Works with stakeholders to define and set strategic direction",
+      "Inspire": "Inspires others to do all the things"
+    },
+    "Object oriented paradigms": {
+      "Follow": "Follows the team processes, delivering a consistent flow of features to production",
+      "Apply": "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
+      "Contribute": "Contributes as an active participant",
+      "Define": "Works with stakeholders to define and set strategic direction",
+      "Inspire": "Inspires others to do all the things"
+    },
+    "Modular code": {
+      "Follow": "Follows the team processes, delivering a consistent flow of features to production",
+      "Apply": "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
+      "Contribute": "Contributes as an active participant",
+      "Define": "Works with stakeholders to define and set strategic direction",
+      "Inspire": "Inspires others to do all the things"
+    },
+    "AWS & Serverless": {
+      "Follow": "Follows the team processes, delivering a consistent flow of features to production",
+      "Apply": "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
+      "Contribute": "Contributes as an active participant",
+      "Define": "Works with stakeholders to define and set strategic direction",
+      "Inspire": "Inspires others to do all the things"
+    },
+    "Secure By Design & CAF": {
+      "Follow": "Follows the team processes, delivering a consistent flow of features to production",
+      "Apply": "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
+      "Contribute": "Contributes as an active participant",
+      "Define": "Works with stakeholders to define and set strategic direction",
+      "Inspire": "Inspires others to do all the things"
+    },
+    "Sustainability / Green IT": {
+      "Follow": "Follows the team processes, delivering a consistent flow of features to production",
+      "Apply": "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
+      "Contribute": "Contributes as an active participant",
+      "Define": "Works with stakeholders to define and set strategic direction",
+      "Inspire": "Inspires others to do all the things"
+    },
+    "Design for availability": {
+      "Follow": "Follows the team processes, delivering a consistent flow of features to production",
+      "Apply": "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
+      "Contribute": "Contributes as an active participant",
+      "Define": "Works with stakeholders to define and set strategic direction",
+      "Inspire": "Inspires others to do all the things"
+    },
+    "Cryptography": {
+      "Follow": "Follows the team processes, delivering a consistent flow of features to production",
+      "Apply": "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
+      "Contribute": "Contributes as an active participant",
+      "Define": "Works with stakeholders to define and set strategic direction",
+      "Inspire": "Inspires others to do all the things"
+    }
+  },
+  "RoleLevels": {
+    "Senior": {
+      "data": [3, 2, 3, 2, 2, 2, 3, 2, 2],
+      "backgroundColor": "rgba(255, 99, 132, 0.2)",
+      "color": "rgb(255, 99, 132)"
+    },
+    "Lead": {
+      "data": [3, 4, 4, 3, 3, 3, 3, 2, 3],
+      "backgroundColor": "rgba(54, 162, 235, 0.2)",
+      "color": "rgb(54, 162, 235)"
+    }
+  }
+}

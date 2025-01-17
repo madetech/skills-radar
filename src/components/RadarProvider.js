@@ -1,5 +1,6 @@
 import React from "react";
 import { ChartData } from "../utils/Data";
+import { roles } from "../utils/data/roles";
 
 const RadarContext = React.createContext();
 
@@ -31,16 +32,23 @@ function radarReducer(state, action) {
 }
 
 function RadarProvider({ children }) {
-  const defaultData = ChartData();
-
-  const [state, dispatch] = React.useReducer(radarReducer, {
+  const defaultData = ChartData(roles.madeTech);
+  const defaultState = {
     previousData: {
       [defaultData.title]: {
         data: defaultData,
       },
     },
     data: defaultData,
+  };
+
+  roles.others.map(ChartData).forEach((roles) => {
+    defaultState.previousData[roles.title] = {
+      data: roles,
+    };
   });
+
+  const [state, dispatch] = React.useReducer(radarReducer, { ...defaultState });
   const value = { state, dispatch };
   return (
     <RadarContext.Provider value={value}>{children}</RadarContext.Provider>
