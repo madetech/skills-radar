@@ -99,16 +99,15 @@
       "Company": null,
       "Community": null
     }
-  }
-,
+  },
   "RoleLevels": {
     "Senior": {
-      "data": [3, 2, 3, 2, 2, 2, 3, 2, 2],
+      "data": [3, 2, 3, 2, 2, 2, 3, 2, 2, 3, 3, 3, 2, 3],
       "backgroundColor": "rgba(255, 99, 132, 0.2)",
       "color": "rgb(255, 99, 132)"
     },
     "Lead": {
-      "data": [3, 4, 4, 3, 3, 3, 3, 2, 3],
+      "data": [3, 4, 4, 3, 3, 3, 3, 2, 3, 3, 4, 3, 4, 3],
       "backgroundColor": "rgba(54, 162, 235, 0.2)",
       "color": "rgb(54, 162, 235)"
     }
