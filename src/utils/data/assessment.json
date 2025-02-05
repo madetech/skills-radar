@@ -1,0 +1,93 @@
+{
+  "title": "Optimum Environment Assessment",
+  "labelOverride": "DCMS",
+  "RoleData": {
+    "User Needs": {
+      "Unknown": null,
+      "Some known": null,
+      "Neutral": null,
+      "Mostly understood": null,
+      "Entirely understood": null
+    },
+    "Success metrics": {
+      "Unknown": null,
+      "Some known": null,
+      "Neutral": null,
+      "Mostly understood": null,
+      "Entirely understood": null
+    },
+    "Capability": {
+      "Unknown": null,
+      "Some known": null,
+      "Neutral": null,
+      "Mostly understood": null,
+      "Entirely understood": null
+    },
+    "Stakeholders Engagement": {
+      "Unknown": null,
+      "Some known": null,
+      "Neutral": null,
+      "Mostly understood": null,
+      "Entirely understood": null
+    },
+    "Iterative and agile": {
+      "Unknown": null,
+      "Some known": null,
+      "Neutral": null,
+      "Mostly understood": null,
+      "Entirely understood": null
+    },
+    "Solving the whole problem": {
+      "Unknown": null,
+      "Some known": null,
+      "Neutral": null,
+      "Mostly understood": null,
+      "Entirely understood": null
+    },
+    "Appropriate technology": {
+      "Unknown": null,
+      "Some known": null,
+      "Neutral": null,
+      "Mostly understood": null,
+      "Entirely understood": null
+    },
+    "Effective communication": {
+      "Unknown": null,
+      "Some known": null,
+      "Neutral": null,
+      "Mostly understood": null,
+      "Entirely understood": null
+    },
+    "Budget": {
+      "Unknown": null,
+      "Some known": null,
+      "Neutral": null,
+      "Mostly understood": null,
+      "Entirely understood": null
+    },
+    "Timeline": {
+      "Unknown": null,
+      "Some known": null,
+      "Neutral": null,
+      "Mostly understood": null,
+      "Entirely understood": null
+    }
+  },
+  "RoleLevels": {
+    "Alpha": {
+      "data": [3, 2, 3, 2, 2, 2, 3, 2, 2, 5],
+      "backgroundColor": "rgba(255, 99, 132, 0.2)",
+      "color": "rgb(255, 99, 132)"
+    },
+    "Beta": {
+      "data": [3, 4, 4, 3, 3, 3, 3, 2, 3, 3],
+      "backgroundColor": "rgba(54, 162, 235, 0.2)",
+      "color": "rgb(54, 162, 235)"
+    },
+    "Worst Case Beta": {
+      "data": [1, 2, 2, 3, 3, 1, 1, 2, 3, 1],
+      "backgroundColor": "rgba(93, 6, 207, 0.2)",
+      "color": "rgb(93, 6, 207)"
+    }
+  }
+}
