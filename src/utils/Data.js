@@ -53,6 +53,12 @@ export const calculateNumOfAttributes = (roleData) =>
 export const ChartData = (roles) => {
   const datasets = parsedRoles(roles.RoleLevels);
 
+  const yourDataset = datasets[datasets.length - 1];
+
+  if (roles.labelOverride) {
+    yourDataset.label = roles.labelOverride;
+  }
+
   return {
     you: datasets.length - 1,
     title: roles.title,
