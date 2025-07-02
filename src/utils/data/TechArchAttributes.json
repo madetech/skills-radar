@@ -37,11 +37,11 @@
       "Creates": "Designs and creates new technologies that are widely used either by internal or external team"
     },
     "Integrations": {
-      "Apply Within a Service": null,
-      "Apply Within a Business Domain": null,
-      "Apply External": null,
-      "Define Strategy": null,
-      "Transform an Enterprise": null
+      "Apply Within a Service": "You can integrate between a FE and one or more API's that you manage avoiding traps like coupling",
+      "Apply Within a Business Domain": "E.g. within an org like HMPPS, you can manage integrations between services outside your immediate control avoiding traps like coupling",
+      "Apply External":  "E.g. Integrating with another Org or Business, you can manage integrations between services outside your control avoiding traps like coupling",
+      "Define Strategy": "Creating blueprints, principles and similar for a business area or a client e.g. HMPPS architecture Guardrails and Principles",
+      "Transform an Enterprise": "The Bluprints and principles etc you create lead to actual change adopted by others"
     },
     "Methodology": {
       "Follow": "Follows the team processes, delivering a consistent flow of features to production",
