@@ -9,11 +9,11 @@
       "Inspire": "Strategic direction has a significant impact on the org and inspires others to deliver that vision"
     },
     "Technical Communication": {
-      "Peers": null,
-      "Tech teams": null,
-      "Multidisciplinary": null,
-      "Business": null,
-      "Exec": null
+      "Peers": "Can communicate ideas with other technologists that leads to a impact",
+      "Tech teams": "Can communicate ideas with multiple technologists and teams that leads to a impact",
+      "Multidisciplinary": "Can communicate ideas with developers, product owners, user researchers etc that bring them together leads to a impact",
+      "Business": "Can communicate ideas with multidisciplinary teams and business stakeholders etc that bring them together leads to a impact",
+      "Exec": "Can communicate ideas with very senior stakeholders (e.g. SCS) etc that bring them together leads to a impact e.g. Architect Elevator",
     },
     "Software Development": {
       "Adopts": "Actively learns and adopts the technology and tools defined by the team",
