@@ -1,78 +1,113 @@
 {
   "title": "1Login",
   "RoleData": {
-    "OAuth/OIDC/DID": {
-      "Follow": "Follows the team processes, delivering a consistent flow of features to production",
-      "Apply": "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
-      "Contribute": "Contributes as an active participant",
-      "Define": "Works with stakeholders to define and set strategic direction",
-      "Inspire": "Inspires others to do all the things"
+    "Security Architecture": {
+      "Basic Principles": "Understands security frameworks and applies basic principles such as encryption, access control, and identity protection.",
+      "System Implementation": "Designs and implements common security measures, including secure credential management and data protection.",
+      "Risk and Threat Management": "Performs threat modeling, risk assessments, and implements strategies to mitigate identity-based threats.",
+      "Security Leadership": "Defines security policies and frameworks, ensuring secure integration of credential issuers and identity data sources.",
+      "Innovative Security Solutions": "Develops advanced security mechanisms, ensuring privacy and integrity in identity verification processes."
     },
-    "Multi-tenant systems": {
-      "Follow": "Follows the team processes, delivering a consistent flow of features to production",
-      "Apply": "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
-      "Contribute": "Contributes as an active participant",
-      "Define": "Works with stakeholders to define and set strategic direction",
-      "Inspire": "Inspires others to do all the things"
+    "Identity and Access Management": {
+      "Awareness": "Understands the basics of identity protocols such as OAuth, OpenID Connect (OIDC), and Decentralised Identifiers (DID).",
+      "Integration": "Configures and manages integration with credential issuers like passport and driving license systems for identity proofing.",
+      "Assurance": "Ensures secure, scalable identity management using robust verification techniques such as KBA and document checks.",
+      "Design": "Designs scalable identity solutions, integrating multiple credential issuers to meet different service needs.",
+      "Pioneering": "Innovates advanced identity verification mechanisms using Verifiable Credentials (VCs) and integrates them across systems."
     },
-    "Object oriented paradigms": {
-      "Follow": "Follows the team processes, delivering a consistent flow of features to production",
-      "Apply": "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
-      "Contribute": "Contributes as an active participant",
-      "Define": "Works with stakeholders to define and set strategic direction",
-      "Inspire": "Inspires others to do all the things"
+    "Information Security Governance and Assurance": {
+      "Introduction": "Follows organisational security policies and supports compliance activities, such as audits.",
+      "Compliance Application": "Conducts compliance checks and supports governance activities in line with frameworks like ISO 27001 or GDPR.",
+      "Framework Development": "Designs governance frameworks, including business continuity and disaster recovery policies.",
+      "Programme Leadership": "Drives risk management programmes and ensures governance aligns with organisational priorities.",
+      "Transformative Practices": "Shapes industry standards and develops innovative governance frameworks for security assurance."
     },
-    "Modular code": {
-      "Follow": "Follows the team processes, delivering a consistent flow of features to production",
-      "Apply": "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
-      "Contribute": "Contributes as an active participant",
-      "Define": "Works with stakeholders to define and set strategic direction",
-      "Inspire": "Inspires others to do all the things"
+    "User-Centred Design": {
+      "User Journey Mapping": "Maps user journeys for identity verification, ensuring ease of access to credential issuers and minimal user friction.",
+      "Service Design": "Develops intuitive identity proofing flows that meet user needs and comply with government service standards.",
+      "Continuous Improvement": "Conducts user testing and optimises identity verification processes, ensuring inclusivity and user satisfaction.",
+      "Lead Design Practices": "Leads teams in creating user-centered identity design strategies for secure and accessible government services.",
+      "Innovative User Experience": "Redefines identity verification processes, introducing new approaches to make the experience more seamless and secure."
     },
-    "AWS & Serverless": {
-      "Follow": "Follows the team processes, delivering a consistent flow of features to production",
-      "Apply": "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
-      "Contribute": "Contributes as an active participant",
-      "Define": "Works with stakeholders to define and set strategic direction",
-      "Inspire": "Inspires others to do all the things"
+    "Privacy by Design": {
+      "Privacy Basics": "Applies basic privacy principles to identity verification processes, ensuring minimal data collection and user consent.",
+      "Data Minimisation": "Implements privacy-enhancing technologies, such as anonymization and secure storage of credential issuer VCs.",
+      "Data Protection Compliance": "Ensures that identity verification processes align with data protection laws, such as GDPR.",
+      "Privacy Leadership": "Leads privacy-by-design initiatives, ensuring user data remains protected across all stages of identity verification.",
+      "Innovative Privacy Practices": "Develops advanced privacy-preserving solutions and integrates them into government identity verification systems."
     },
-    "Secure By Design & CAF": {
-      "Follow": "Follows the team processes, delivering a consistent flow of features to production",
-      "Apply": "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
-      "Contribute": "Contributes as an active participant",
-      "Define": "Works with stakeholders to define and set strategic direction",
-      "Inspire": "Inspires others to do all the things"
+    "Cloud": {
+      "Adopts": "Actively learns and adopts the technology and tools defined by the team",
+      "Specialises": "Is the go-to person for one or more technologies and takes initiative to learn new ones",
+      "Evangelises": "Researches, creates proofs of concept and introduces new technologies to the team",
+      "Masters": "Has very deep knowledge about the whole technology stack of the system",
+      "Creates": "Designs and creates new technologies that are widely used either by internal or external team"
     },
-    "Sustainability / Green IT": {
-      "Follow": "Follows the team processes, delivering a consistent flow of features to production",
-      "Apply": "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
-      "Contribute": "Contributes as an active participant",
-      "Define": "Works with stakeholders to define and set strategic direction",
-      "Inspire": "Inspires others to do all the things"
+    "Collaboration and Reusability": {
+      "Collaboration": "Uses reusable components for integrating credential issuers into the identity verification process.",
+      "Collaborative Design": "Designs and shares reusable identity modules across government departments to ensure consistent verification practices.",
+      "Process Optimisation": "Promotes reusable identity protocols and ensures secure, efficient sharing of identity data across services.",
+      "Cross-Team Alignment": "Leads initiatives to align teams on reusable identity management strategies and shared credential issuer solutions.",
+      "Reusability Innovation": "Creates widely adopted reusable frameworks for secure identity verification across government services."
     },
-    "Design for availability": {
-      "Follow": "Follows the team processes, delivering a consistent flow of features to production",
-      "Apply": "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
-      "Contribute": "Contributes as an active participant",
-      "Define": "Works with stakeholders to define and set strategic direction",
-      "Inspire": "Inspires others to do all the things"
+    "Integration and Adaptability": {
+      "Introduction": "Understands integration patterns for connecting with credential issuers and identity verification systems.",
+      "Implementation": "Integrates identity verification services with multiple credential issuers, ensuring seamless data flow.",
+      "Integration": "Designs adaptive integration patterns for evolving identity systems and new credential issuers.",
+      "Leadership": "Leads integration efforts across government services to ensure consistent, secure identity proofing processes.",
+      "Transformation": "Defines new integration strategies, ensuring that identity verification standards adapt to future technology trends."
     },
-    "Cryptography": {
-      "Follow": "Follows the team processes, delivering a consistent flow of features to production",
-      "Apply": "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
-      "Contribute": "Contributes as an active participant",
-      "Define": "Works with stakeholders to define and set strategic direction",
-      "Inspire": "Inspires others to do all the things"
+    "Accessibility and Inclusivity": {
+      "Accessibility": "Ensures identity verification processes meet basic accessibility guidelines, including WCAG standards.",
+      "Inclusive": "Designs accessible identity verification interfaces and ensures usability across diverse user groups.",
+      "Advanced": "Leads accessibility audits and designs systems to exceed accessibility standards for government services.",
+      "Leadership": "Mentors teams to ensure all identity verification services are inclusive and meet diverse user needs.",
+      "Innovative": "Advances accessibility practices in identity management, influencing national standards for inclusive government services."
+    },
+    "Open Standards and Open Source Integration": {
+      "Awareness": "Understands open standards related to identity verification, such as Verifiable Credentials (VCs).",
+      "Application": "Uses open-source tools and standards for secure, verifiable identity data exchange across services.",
+      "Integration": "Ensures that Verifiable Credentials (VCs) are properly integrated into identity verification workflows.",
+      "Advocacy": "Leads efforts to promote open standards in identity verification, ensuring interoperability between credential issuers.",
+      "Innovative": "Develops new open-source tools for identity verification and drives the adoption of open standards across government systems."
+    },
+    "Data Utilisation": {
+      "Basics": "Uses data from credential issuers to inform identity verification decisions and assess risk.",
+      "Management": "Ensures secure storage and processing of identity-related data, including VCs and user profiles.",
+      "Optimisation": "Designs data pipelines to manage and optimise the use of identity-related data from credential issuers.",
+      "Leadership": "Leads data-driven decision-making in identity verification processes, ensuring accurate and efficient service delivery.",
+      "Innovative": "Defines strategies for innovative use of identity data, enabling new approaches to secure, scalable government services."
+    },
+    "Governance and Quality Assurance": {
+      "Introduction": "Supports basic governance activities and follows quality assurance processes.",
+      "Implementation": "Implements quality controls and ensures compliance with governance policies.",
+      "Refinement": "Defines quality assurance frameworks and ensures adherence across projects and systems.",
+      "Leadership": "Leads governance initiatives and integrates quality assurance with organisational strategies.",
+      "Governance": "Introduces new governance models and quality methodologies that drive continuous improvement."
+    },
+    "Sustainable Technology Practices": {
+      "Awareness": null,
+      "Implementation": null,
+      "Optimisation": null,
+      "Leadership": null,
+      "Innovative": null
+    },
+    "Influencing": {
+      "Individuals": null,
+      "Team": null,
+      "Multiple Teams": null,
+      "Company": null,
+      "Community": null
     }
   },
   "RoleLevels": {
     "Senior": {
-      "data": [3, 2, 3, 2, 2, 2, 3, 2, 2],
+      "data": [3, 2, 3, 2, 2, 2, 3, 2, 2, 3, 3, 3, 2, 3],
       "backgroundColor": "rgba(255, 99, 132, 0.2)",
       "color": "rgb(255, 99, 132)"
     },
     "Lead": {
-      "data": [3, 4, 4, 3, 3, 3, 3, 2, 3],
+      "data": [3, 4, 4, 3, 3, 3, 3, 2, 3, 3, 4, 3, 4, 3],
       "backgroundColor": "rgba(54, 162, 235, 0.2)",
       "color": "rgb(54, 162, 235)"
     }
