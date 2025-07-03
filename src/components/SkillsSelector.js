@@ -4,7 +4,7 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 import { RadarConsumer } from "./RadarProvider";
-import LoadFromStorage from "./LoadFromStorage";
+import LoadFromLocalStorage from "./LoadFromLocalStorage";
 
 const SkillsSelector = () => {
   
@@ -18,7 +18,7 @@ const SkillsSelector = () => {
             marginBottom: "25px",
           }}
         >
-          <LoadFromStorage radarDispatch={dispatch} />
+          <LoadFromLocalStorage radarState={state} radarDispatch={dispatch} />
           <Box sx={{ minWidth: 350 }}>
             <FormControl fullWidth>
               <InputLabel id="json-selector-label">Skills</InputLabel>

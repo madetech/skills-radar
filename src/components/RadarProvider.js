@@ -27,7 +27,7 @@ function radarReducer(state, action) {
       console.log(state.data)
       return { ...state, data: state.data };
     }
-    case "loadFromStorage": {
+    case "loadFromLocalStorage": {
       const storageData = JSON.parse(localStorage.getItem("youData"));
       if (storageData && Array.isArray(storageData)) {
         return {
