@@ -23,8 +23,31 @@ function radarReducer(state, action) {
       return { ...state, data };
     }
     case "update": {
+      localStorage.setItem("youData", JSON.stringify(state.data.datasets[state.data.you].data));
+      console.log(state.data)
       return { ...state, data: state.data };
     }
+    case "loadFromStorage": {
+      const storageData = JSON.parse(localStorage.getItem("youData"));
+      if (storageData && Array.isArray(storageData)) {
+        return {
+          ...state,
+          data: {
+            ...state.data,
+            datasets: [
+              ...state.data.datasets.slice(0, state.data.you),
+              {
+                ...state.data.datasets[state.data.you],
+                data: storageData
+              }
+            ]
+          }
+        }
+      } else {
+        return {...state}
+      }
+    }
+
     default: {
       throw new Error(`Unhandled action type: ${action.type}`);
     }
