@@ -4,6 +4,8 @@ import { roles } from "../utils/data/roles";
 
 const RadarContext = React.createContext();
 
+const lsKeyData = "youData";
+
 function radarReducer(state, action) {
   switch (action.type) {
     case "upload": {
@@ -23,8 +25,25 @@ function radarReducer(state, action) {
       return { ...state, data };
     }
     case "update": {
+      localStorage.setItem(lsKeyData, JSON.stringify(state.data.datasets[state.data.you].data));
       return { ...state, data: state.data };
     }
+    case "loadFromLocalStorage": {
+      const storageData = JSON.parse(localStorage.getItem(lsKeyData));
+      if (!storageData || !Array.isArray(storageData)) {
+        return state;
+      }
+
+      const updatedDatasets = state.data.datasets.map((dataset, index) => 
+        index === state.data.you ? { ...dataset, data: storageData } : dataset
+      );
+
+      return {
+        ...state,
+        data: { ...state.data, datasets: updatedDatasets}
+      };
+    }
+
     default: {
       throw new Error(`Unhandled action type: ${action.type}`);
     }

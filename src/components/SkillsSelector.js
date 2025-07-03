@@ -3,9 +3,21 @@ import FormControl from "@mui/material/FormControl";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
-import { RadarConsumer } from "./RadarProvider";
+import { RadarConsumer, useData } from "./RadarProvider";
+import { useEffect } from "react";
 
 const SkillsSelector = () => {
+  
+  const ctx = useData();
+
+  useEffect(() => {
+    ctx.dispatch({type: "loadFromLocalStorage"});
+  },
+  // Intentionally disabling the warning here because we want to load data only once 
+  // when the component mounts
+  // eslint-disable-next-line
+  []);
+  
   return (
     <RadarConsumer>
       {({ state, dispatch }) => (
