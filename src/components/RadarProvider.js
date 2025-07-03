@@ -24,7 +24,6 @@ function radarReducer(state, action) {
     }
     case "update": {
       localStorage.setItem("youData", JSON.stringify(state.data.datasets[state.data.you].data));
-      console.log(state.data)
       return { ...state, data: state.data };
     }
     case "loadFromLocalStorage": {

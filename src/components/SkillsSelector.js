@@ -18,7 +18,6 @@ const SkillsSelector = () => {
   // eslint-disable-next-line
   []);
   
-
   return (
     <RadarConsumer>
       {({ state, dispatch }) => (
