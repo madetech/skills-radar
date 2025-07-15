@@ -44,11 +44,11 @@
       "Transform an Enterprise": "The Bluprints and principles etc you create lead to actual change adopted by others"
     },
     "Methodology": {
-      "Follow": "Follows the team processes, delivering a consistent flow of features to production",
-      "Apply": "Enforces the team processes, making sure everybody understands the benefits and tradeoffs",
-      "Evangelises": "Researches, creates proofs of concept and introduces new technologies to the team",
-      "Masters": "Has very deep knowledge about the whole technology stack of the system",
-      "Creates": "Designs and creates new technologies that are widely used either by internal or external team"
+      "Follow": "Understand the team processes and standard methodologies e.g. TDD, design standards, Wardley Mapping, Impact Mapping, UML, Risk Storming, Event Storming etc",
+      "Apply": "Delivers using these processes and standard methodologies",
+      "Evangelises": "Introduces processes and standard methodologies to the team and can articulate the benefits and drivers behind them",
+      "Masters": "Has deep knowledge of a wide range of approaches and methodologies and their pros and cons",
+      "Creates": "Creates new approaches and methodologies, perhaps combining or leaning off known methods"
     },
     "Facilitation": {
       "Assist Workshops": null,
